@@ -1,0 +1,167 @@
+<style>
+  :global(body) {
+    background: black url(images/hero-1.jpg) center / cover;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    .container {
+      background: black url(images/hero-2.jpg) center / cover;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      background: black url(images/hero-3.jpg) center / cover;
+    }
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      font-size: 90%;
+    }
+  }
+
+  /*** build the presentation using flex and cssgrid */
+  header {
+  }
+
+  main {
+  }
+
+  main > h2 {
+    font-size: 2.4em;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+  }
+
+  main > h3 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+  }
+
+  #a {
+  }
+  #b {
+  }
+  #c {
+  }
+  #d {
+  }
+  #e {
+  }
+
+  footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    color: white;
+  }
+  .grid {
+    width: 70%;
+  }
+
+  @media (max-width: 512px) {
+    .grid {
+    }
+  }
+
+  .nav-center {
+  }
+
+  .nav-right {
+  }
+
+  @media (max-width: 768px) {
+    .nav-center,
+    .nav-right {
+      display: none;
+    }
+  }
+
+  .brand {
+    height: 64px;
+    width: 150px;
+    padding: 16px;
+  }
+  .brand > img {
+    height: 100%;
+    width: 100%;
+  }
+  .nav-item {
+    font-size: 0.8em;
+    color: black;
+    margin: 24px 16px;
+  }
+  .selected {
+    color: yellow;
+  }
+  .center-column {
+  }
+</style>
+
+<section class="container">
+  <header>
+    <div class="brand">
+      <img src="images/tesla.svg" />
+    </div>
+    <div class="nav-center">
+      <p class="nav-item">MODEL X</p>
+      <p class="nav-item">MODEL S</p>
+      <p class="nav-item">MODEL 3</p>
+      <p class="nav-item selected">ROADSTER</p>
+      <p class="nav-item">ENERGY</p>
+    </div>
+    <div class="nav-right">
+      <p class="nav-item">SHOP</p>
+      <p class="nav-item">SIGN IN</p>
+    </div>
+  </header>
+  <main>
+    <h2>Tesla</h2>
+    <h3>Roadster</h3>
+  </main>
+  <footer>
+    <div class="grid">
+      <div id="a" class="center-column">
+        <p class="footer-slug">
+          ​The quickest car in the world, with record-setting<br />
+          acceleration, range and performance.
+        </p>
+      </div>
+      <div id="b" class="center-column">
+        <p class="title has-text-white">
+          <i
+            class="fas fa-tachometer-alt has-text-grey-light"
+            style="width: 0.75em; height: 0.75em;"
+          ></i>
+          1.9<span class="is-size-5">s</span>
+        </p>
+        <p class="subtitle has-text-white is-7">0-60 mph</p>
+      </div>
+      <div id="c" class="center-column" style="border-left: 1px solid gray;">
+        <p class="title has-text-white">
+          <span class="is-size-5">+</span>250<span class="is-size-5">mph</span>
+        </p>
+        <p class="subtitle is-7 has-text-white">Top Speed</p>
+      </div>
+      <div id="d" class="center-column" style="border-left: 1px solid gray;">
+        <p class="title has-text-white">620<span class="is-size-5">mi</span></p>
+        <p class="subtitle is-7 has-text-white">Mile Range</p>
+      </div>
+      <div id="e" class="center-column">
+        <a
+          class="button is-danger is-inverted is-rounded is-outlined has-text-weight-bold"
+          style="width: 100%; border: 0.15em solid white;color: white;"
+        >
+          Reserve Now
+        </a>
+      </div>
+    </div>
+  </footer>
+</section>
